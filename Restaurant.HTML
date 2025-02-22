@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Cucina Bella - Italian Restaurant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        .restaurant-name {
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-menu {
+            background-color: #f8f9fa;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-menu:hover {
+            background-color: #e9ecef;
+        }
+
+        .menu-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .specialties-list {
+            list-style-type: square;
+        }
+
+        .ordered-specialties {
+            list-style-type: upper-roman;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="nav-menu p-4 mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 id="main-heading" class="restaurant-name text-3xl font-bold">La Cucina Bella - Italian Restaurant</h1>
+            <div class="space-x-6">
+                <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+                <a href="#menu" class="text-gray-700 hover:text-gray-900">Menu</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4">
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Our Specialties</h2>
+            <ul class="specialties-list ml-6 mb-6">
+                <li class="mb-2">Authentic Italian Cuisine</li>
+                <li class="mb-2">Wood-Fired Pizza</li>
+                <li class="mb-2">Homemade Pasta</li>
+                <li class="mb-2">Fresh Seafood</li>
+                <li class="mb-2">Traditional Desserts</li>
+            </ul>
+
+            <ol class="ordered-specialties ml-6">
+                <li class="mb-2">Authentic Italian Cuisine</li>
+                <li class="mb-2">Wood-Fired Pizza</li>
+                <li class="mb-2">Homemade Pasta</li>
+                <li class="mb-2">Fresh Seafood</li>
+                <li class="mb-2">Traditional Desserts</li>
+            </ol>
+        </section>
+
+        <section id="menu" class="menu-card bg-white p-6 mb-12">
+            <h2 class="text-2xl font-bold mb-4">Our Menu</h2>
+            <table class="w-full border-collapse">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="border p-3 text-left">Dish Name</th>
+                        <th class="border p-3 text-left">Price</th>
+                        <th class="border p-3 text-left">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="menu-item">
+                        <td class="border p-3">Margherita Pizza</td>
+                        <td class="border p-3">16</td>
+                        <td class="border p-3">Fresh tomatoes, mozzarella, basil, and olive oil</td>
+                    </tr>
+                    <tr class="menu-item">
+                        <td class="border p-3">Spaghetti Carbonara</td>
+                        <td class="border p-3">18</td>
+                        <td class="border p-3">Eggs, pecorino cheese, guanciale, and black pepper</td>
+                    </tr>
+                    <tr class="menu-item">
+                        <td class="border p-3">Osso Buco</td>
+                        <td class="border p-3">32</td>
+                        <td class="border p-3">Braised veal shanks with gremolata and saffron risotto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="menu-card bg-white p-6">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-2">Phone: 123456789</p>
+            <p class="mb-2">Email: puneeth@example.com</p>
+            <p>Address: 123 abc</p>
+        </section>
+    </div>
+</body>
+</html>
